@@ -3,7 +3,7 @@
 var path = require("path");
 var Mix  = require("./lib/mix");
 /**
- * [settings description 提供给用户可配置的参数说明]
+ * 提供给用户可配置的参数说明
  * @param  {[Array]} list      [指定进行混淆的widget下的路径，支持正则]
  * @param  {[Object]} ignore   [不进行混淆的选择器]
  *                    ignore: {
