@@ -58,12 +58,12 @@ fis.match("::package",{
 ### 可配置参数详细说明
  - list : 指定进行混淆的widget下的路径，支持正则
  - ignore : 不进行混淆的选择器
- ```javascript
+```javascript
     ignore: {
         'name': ['.clearfix', '#container'], //可包含类名和id名
         'classReg': [/^global-.+/]
     }
- ```
+```
  - onlyMixClass : 只对指定的类名进行混淆
 ```javascript
     onlyMixClass: ['global-test', /^global-.+/]
