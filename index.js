@@ -30,6 +30,12 @@ var Mix  = require("./lib/mix");
  *                                       name: ['module-test', /^frame-.+/],
  *                                       path: [/\/test\/.*test.(css|js)/i]
  *                                   }
+ * @param  {[Object]} getProcessedResult      [获取处理结果]
+ *                                   functon (map, customMap) {
+ *                                       // map.id, map.class
+ *                                       // customMap.id, customMap,class
+ *                                   }
+ *                                   
  */
 var exports = module.exports = function(ret, conf, settings, opt) {
     var ids = ret.ids || {};
@@ -45,7 +51,8 @@ var exports = module.exports = function(ret, conf, settings, opt) {
             'jsPrefixs': settings['jsPrefix'] || [],
             'mixNameFun': settings['mixNameFun'],
             'customMix': settings['customMix'] || {},
-            'mixer' : settings['mixer'] || []
+            'mixer' : settings['mixer'] || [],
+            getProcessedResult: settings['getProcessedResult']
         });
     }
 };
