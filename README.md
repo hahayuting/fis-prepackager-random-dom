@@ -90,11 +90,18 @@ fis.match("::package",{
         css: []
     }
 ```
- - customMix : 指定使用自定义的字符散列规则mixNameFun进行混淆处理的
+ - customMix : 指定使用自定义的字符散列规则mixNameFun进行混淆处理的,都支持正则
 ```javascript
     customMix: {
         name: ['module-test', /^frame-.+/],
         path: [/\/test\/.*test.(css|js)/i]
+    }
+```
+ - getProcessedResult : 获取处理结果，可用于调试校验。对于处理结果比较多的，建议单个组件进行调试。
+```javascript
+    getProcessedResult: function (map, customMap) {
+        console.log(map.id, map.class);
+        console.log(customMap.id, customMap.class);
     }
 ```
 

@@ -1,18 +1,29 @@
 {
   "name": "fis-prepackager-random-dom",
-  "version": "0.0.2",
-  "description": "组件样式混淆插件",
+  "version": "0.0.11",
+  "description": "样式混淆插件",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "fis"
+    "fis",
+    "random-dom"
   ],
   "author": "liuyuting",
   "license": "MIT",
   "dependencies": {
+    "random-dom-mix": "~0.0.2",
     "css-parse": "^2.0.0",
     "hashids": "1.0.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hahayuting/fis-prepackager-random-dom.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hahayuting/fis-prepackager-random-dom/issues"
+  },
+  "homepage": "https://github.com/hahayuting/fis-prepackager-random-dom#readme"
 }
