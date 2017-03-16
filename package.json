@@ -1,6 +1,6 @@
 {
   "name": "fis-prepackager-random-dom",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "样式混淆插件",
   "main": "index.js",
   "scripts": {
