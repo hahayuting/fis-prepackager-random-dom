@@ -13,9 +13,7 @@
   "author": "liuyuting",
   "license": "MIT",
   "dependencies": {
-    "random-dom-mix": "~1.0.1",
-    "css-parse": "^2.0.0",
-    "hashids": "1.0.2"
+    "random-dom-mix": "~1.0.1"
   },
   "devDependencies": {},
   "repository": {
