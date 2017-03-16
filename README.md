@@ -67,7 +67,7 @@ fis.match('::package',{
 ```
 
 ### 配置参数详细说明
- - list: [ ] || '' ;`必填` 指定进行混淆的widget下的路径，支持正则 
+ - list: [ ] || '' ;`必填` 指定进行混淆的widget下的路径，支持正则。在fis中list文件路径以模块目录开始，如：widget/xx/xx
  ```javascript
     list: [
         'widget/test',
