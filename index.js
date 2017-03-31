@@ -17,7 +17,11 @@ var exports = module.exports = function(ret, conf, settings, opt) {
         customMix: settings.customMix || {},
         mixAttr: settings.mixAttr,
         mixer: settings.mixer || [],
-        getProcessedResult: settings.getProcessedResult,
+        getProcessedResult: function (map, customMap) {
+            if (typeof settings.getProcessedResult === 'function') {
+                settings.getProcessedResult(ret, map, customMap);
+            }
+        },
         list: list,
         resource: ret.ids || {},
         pathKey: 'realpath',
